@@ -1,0 +1,117 @@
+! ==============================================================================
+!  AdGuard Home 白名单（公开版 · 可放 GitHub 自动加载）
+!  ------------------------------------------------------------------------------
+!  用途：修复 微信 / 小红书 / 同程旅行 被 adblockdnslite 误杀
+!  规则数：62 条
+!
+!  已剔除自有域名（superma.* 等 14 条），避免公开暴露自建服务。
+!  那 14 条请留在 AdGuard Home 的「自定义过滤规则」里，见配套文件。
+!
+!  用法（AdGuard Home）：
+!    过滤器 → 添加过滤器 → 添加自定义列表 → 填 raw URL → 保存 → 勾选启用
+!    注意必须是 raw.githubusercontent.com 开头的地址，不是 github.com 的页面地址
+! ==============================================================================
+
+
+! ------------------------------------------------------------------------------
+!  同程旅行 / 艺龙
+!  40017.cn 是「机票查询白屏」根因（js./file.40017.cn 是页面 JS 与静态资源）
+! ------------------------------------------------------------------------------
+@@||40017.cn^$important
+@@||17u.cn^$important
+@@||17u.net^$important
+@@||ly.com^$important
+@@||lycdn.com^$important
+@@||lystatic.com^$important
+@@||17usoft.com^$important
+@@||tongcheng.com^$important
+@@||elong.com^$important
+
+
+! ------------------------------------------------------------------------------
+!  微信登录 / 授权（各 App 跳微信确认页白屏）
+! ------------------------------------------------------------------------------
+@@||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
+@@||apd-pcdnwxnat.teg.tencent-cloud.net^$important
+@@||apd-pcdnwxstat.teg.tencent-cloud.net^$important
+@@||apd-pcdnvodstat.teg.tencent-cloud.net^$important
+@@||wxaintpcos.wxqcloud.qq.com.cn^$important
+@@||log.wtlogin.qq.com^$important
+@@||log1.wtlogin.qq.com^$important
+
+
+! ------------------------------------------------------------------------------
+!  微信资源（兜底规则覆盖不到的部分）
+!  dns.weixin.qq.com.cn 属于 qq.com.cn；wxsnsdy/wxsnsad 属于 tc.qq.com
+! ------------------------------------------------------------------------------
+@@||dns.weixin.qq.com.cn^$important
+@@||wxsnsdy.tc.qq.com^$important
+@@||wxsnsad.tc.qq.com^$important
+@@||wx.qlogo.cn^$important
+@@||thirdwx.qlogo.cn^$important
+@@||mmbiz.qpic.cn^$important
+@@||res.wx.qq.com^$important
+
+
+! ------------------------------------------------------------------------------
+!  微信内置浏览器（X5/TBS 内核）+ 浏览器设备标识
+!  仅安卓微信依赖；iOS 走系统 WebView，加了也无害
+! ------------------------------------------------------------------------------
+@@||imtt.qq.com^$important
+@@||log.tbs.qq.com^$important
+@@||browsertdidticket.m.qq.com^$important
+@@||tdid.m.qq.com^$important
+@@||dnet.mb.qq.com^$important
+@@||pms.mb.qq.com^$important
+@@||gatherer.m.qq.com^$important
+@@||snowflake.qq.com^$important
+
+
+! ------------------------------------------------------------------------------
+!  小红书
+!  只放行功能域名，xhscdn.com 的 ads-* 广告域仍被拦 —— 开屏广告靠这个屏蔽
+! ------------------------------------------------------------------------------
+@@||xhslink.com^$important
+@@||sns-img-qc.xhscdn.com^$important
+@@||sns-img-hw.xhscdn.com^$important
+@@||sns-webpic-qc.xhscdn.com^$important
+@@||sns-webpic-hw.xhscdn.com^$important
+@@||sns-avatar-qc.xhscdn.com^$important
+@@||sns-avatar-hw.xhscdn.com^$important
+@@||sns-video-qc.xhscdn.com^$important
+@@||sns-video-hw.xhscdn.com^$important
+@@||fe-video-qc.xhscdn.com^$important
+@@||fe-video-hw.xhscdn.com^$important
+@@||fe-static.xhscdn.com^$important
+@@||picasso-static.xhscdn.com^$important
+@@||picasso-qc.xhscdn.com^$important
+@@||ci.xhscdn.com^$important
+@@||img.xhscdn.com^$important
+
+
+! ------------------------------------------------------------------------------
+!  家族兜底（整域放行，最抗上游更新）
+!  想收紧：删掉对应那条，再把上面的细分域名补回来
+! ------------------------------------------------------------------------------
+@@||weixin.qq.com^$important
+@@||wxs.qq.com^$important
+@@||wechat.com^$important
+@@||wechatpay.com^$important
+@@||wechatpay.cn^$important
+@@||xiaohongshu.com^$important
+
+
+! ------------------------------------------------------------------------------
+!  拦截型（不是白名单！）
+!  给 OpenAI 系列关闭 IPv6，避免 AAAA 查询超时
+!  ⚠ 这些是拦截规则，绝对不能改成 @@
+! ------------------------------------------------------------------------------
+||openai.com^$dnstype=AAAA
+||chatgpt.com^$dnstype=AAAA
+||auth.openai.com^$dnstype=AAAA
+||oaistatic.com^$dnstype=AAAA
+||oaiusercontent.com^$dnstype=AAAA
+||auth0.com^$dnstype=AAAA
+||challenges.cloudflare.com^$dnstype=AAAA
+||openai.azure.com^$dnstype=AAAA
+||azureedge.net^$dnstype=AAAA
