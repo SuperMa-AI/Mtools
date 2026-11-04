@@ -1,0 +1,36 @@
+{
+  "sites": [
+    {
+      "key": "ffzy",
+      "name": "非凡资源",
+      "type": 0,
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/at/xml/",
+      "searchable": 1,
+      "quick": 1
+    },
+    {
+      "key": "lzzy",
+      "name": "量子资源",
+      "type": 0,
+      "api": "https://cj.lzcaiji.com/api.php/provide/vod/at/xml/",
+      "searchable": 1,
+      "quick": 1
+    },
+    {
+      "key": "sdzy",
+      "name": "闪电资源",
+      "type": 1,
+      "api": "https://sdzyapi.com/api.php/provide/vod/at/json/",
+      "searchable": 1,
+      "quick": 1
+    },
+    {
+      "key": "wlzy",
+      "name": "卧龙资源",
+      "type": 1,
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/at/json/",
+      "searchable": 1,
+      "quick": 1
+    }
+  ]
+}
