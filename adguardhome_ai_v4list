@@ -1,0 +1,14 @@
+! ##############################################################################
+!  七、拦截型（不是白名单！）
+!  给 OpenAI 系列关闭 IPv6：只返回 A 记录，避免 AAAA 查询超时
+!  这些是拦截规则，绝对不能改成 @@
+! ##############################################################################
+
+||openai.com^$dnstype=AAAA
+||chatgpt.com^$dnstype=AAAA
+||oaistatic.com^$dnstype=AAAA
+||oaiusercontent.com^$dnstype=AAAA
+||auth0.com^$dnstype=AAAA
+||challenges.cloudflare.com^$dnstype=AAAA
+||openai.azure.com^$dnstype=AAAA
+||azureedge.net^$dnstype=AAAA
