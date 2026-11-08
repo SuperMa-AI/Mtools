@@ -102,17 +102,4 @@
 
 
 
-! ##############################################################################
-!  快速自检（改完规则后跑一遍，全部有真实 IP 才算正常）
-!
-!   微信      dns.weixin.qq.com          szlong.weixin.qq.com
-!             open.weixin.qq.com         wxsnsdy.wxs.qq.com
-!   微信登录  apd-pcdnwxlogin.teg.tencent-cloud.net
-!             cfg.imtt.qq.com            wxaintpcos.wxqcloud.qq.com.cn
-!   小红书    t2.xiaohongshu.com         edith.xiaohongshu.com
-!             flash.xiaohongshu.com      sns-img-qc.xhscdn.com
-!   同程      js.40017.cn                file.40017.cn
-!
-!   应被拦（返回 0.0.0.0 才正确）:
-!             ads-splash-v1.xhscdn.com
-! ##############################################################################
+
