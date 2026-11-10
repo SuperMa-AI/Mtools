@@ -1,0 +1,266 @@
+# ============ 1. OpenAI / ChatGPT / Sora ============
+domain:openai.com
+domain:chatgpt.com
+domain:oaistatic.com
+domain:oaiusercontent.com
+domain:sora.com
+domain:chatgpt.com.cdn.cloudflare.net
+domain:serval.app
+# Azure / CDN（ChatGPT 网页与 App 的图片、静态资源、API 网关）
+domain:openai.azure.com
+domain:azureedge.net
+domain:azurefd.net
+domain:windows.net
+domain:imgix.net
+# App / 网页登录校验、Bot 防御、身份认证（手机端地区校验必需）
+domain:auth0.com
+domain:arkoselabs.com
+domain:hcaptcha.com
+domain:challenges.cloudflare.com
+domain:recaptcha.net
+# 特性开关 / 崩溃与埋点上报（ChatGPT、Claude App 都用）
+domain:statsigapi.net
+domain:featuregates.org
+domain:sentry.io
+
+
+# ============ 2. Anthropic / Claude ============
+domain:anthropic.com
+domain:claude.ai
+# Claude 附件、Artifacts、文件下载 CDN（容易漏，漏了会出现能聊天但传文件卡住）
+domain:claudeusercontent.com
+# domain:claude.com 为 Anthropic 新启用的品牌域名，若解析异常可删；默认放开
+domain:claude.com
+
+
+# ============ 3. Google AI / Gemini / NotebookLM ============
+# 注意：gemini.google.com、aistudio.google.com(AI Studio)、generativelanguage.googleapis.com、
+#       bard.google.com、makersuite.google.com 已被 A 类 domain:google.com /
+#       domain:googleapis.com 覆盖，这里只补独立顶级域。
+domain:ai.google.dev
+domain:ai.google
+domain:deepmind.google
+domain:deepmind.com
+domain:labs.google
+domain:notebooklm.google
+domain:gemini.google
+
+
+# ============ 4. xAI / Grok ============
+domain:x.ai
+domain:grok.com
+domain:xai.com
+
+
+# ============ 5. Meta AI / Muse / Llama ============
+domain:meta.ai
+domain:meta.com
+domain:muse.ai
+domain:muse.com
+domain:metaaivm.com
+domain:fbcdn.net
+domain:fbsv.net
+domain:llama.com
+# 说明：api.meta.ai / dev.meta.ai 由 meta.ai 覆盖；
+#       graph.meta.com / ai.meta.com / about.meta.com 由 meta.com 覆盖。
+
+
+# ============ 6. Perplexity / AI 搜索与问答 ============
+domain:perplexity.ai
+domain:pplx.ai
+domain:poe.com
+domain:you.com
+domain:phind.com
+domain:kagi.com
+domain:genspark.ai
+domain:character.ai
+domain:pi.ai
+domain:inflection.ai
+domain:duckduckgo.com
+domain:exa.ai
+domain:jina.ai
+
+
+# ============ 7. 主流大模型厂商 ============
+domain:mistral.ai
+domain:cohere.com
+domain:cohere.ai
+domain:ai21.com
+domain:stability.ai
+domain:dreamstudio.ai
+
+
+# ============ 8. 模型 / 推理 / API 平台（开发者） ============
+domain:huggingface.co
+domain:hf.co
+domain:groq.com
+domain:together.ai
+domain:together.xyz
+domain:fireworks.ai
+domain:openrouter.ai
+domain:replicate.com
+domain:deepinfra.com
+domain:anyscale.com
+domain:langchain.com
+domain:pinecone.io
+domain:tavily.com
+domain:fal.ai
+domain:runpod.io
+domain:modal.com
+domain:cerebras.ai
+domain:sambanova.ai
+domain:baseten.co
+
+
+# ============ 9. AI 图像生成 ============
+domain:midjourney.com
+domain:leonardo.ai
+domain:ideogram.ai
+domain:recraft.ai
+domain:blackforestlabs.ai
+domain:bfl.ai
+domain:civitai.com
+domain:krea.ai
+domain:pollinations.ai
+domain:playground.com
+domain:playgroundai.com
+domain:pixpix.com
+domain:tensor.art
+
+
+# ============ 10. AI 视频生成 ============
+domain:runwayml.com
+domain:pika.art
+domain:lumalabs.ai
+domain:pixverse.ai
+domain:heygen.com
+domain:synthesia.io
+domain:haiper.ai
+domain:vidu.com
+domain:vidu.studio
+
+
+# ============ 11. AI 音频 / 音乐 / 语音 ============
+domain:suno.com
+domain:suno.ai
+domain:udio.com
+domain:elevenlabs.io
+domain:descript.com
+domain:otter.ai
+domain:fireflies.ai
+
+
+# ============ 12. AI 编程 / IDE / Agent ============
+domain:cursor.com
+domain:cursor.sh
+domain:windsurf.com
+domain:codeium.com
+domain:githubcopilot.com
+domain:replit.com
+domain:bolt.new
+domain:stackblitz.com
+domain:v0.dev
+domain:v0.app
+domain:lovable.dev
+domain:augmentcode.com
+domain:sourcegraph.com
+domain:tabnine.com
+domain:continue.dev
+domain:devin.ai
+domain:cognition.ai
+domain:opencode.ai
+domain:opencode.com
+
+
+# ============ 13. AI 办公 / 写作 / 效率 / 研究 ============
+domain:notion.so
+domain:notion.com
+domain:deepl.com
+domain:grammarly.com
+domain:jasper.ai
+domain:copy.ai
+domain:writesonic.com
+domain:quillbot.com
+domain:wordtune.com
+domain:gamma.app
+domain:tome.app
+domain:beautiful.ai
+domain:elicit.com
+domain:consensus.app
+domain:scite.ai
+
+
+# ============ 14. API 中转 / 聚合 / 自用 ============
+domain:ai.com
+domain:aihubmix.com
+domain:tokenharbor.ai
+domain:chat.b.ai
+domain:workbuddy.ai
+domain:dola.com
+# console.aihubmix.com 已被 aihubmix.com 覆盖
+
+
+# ============ 14b. AI Agent / 工作流 / 本地客户端 / 会议助手 ============
+domain:manus.im
+domain:dify.ai
+domain:n8n.io
+domain:ollama.com
+domain:lmstudio.ai
+domain:anythingllm.com
+domain:flowiseai.com
+domain:langflow.org
+domain:trae.ai
+domain:granola.ai
+domain:fathom.video
+
+
+# ============ 14c. 视频/音乐生成补充（国际站） ============
+domain:klingai.com
+domain:minimax.io
+domain:hailuoai.video
+domain:riffusion.com
+domain:mubert.com
+
+
+# ============ 15. 通用基础设施（App 认证 / 推送 / 遥测 / 订阅） ============
+domain:intercom.io
+domain:intercomcdn.com
+domain:stripe.com
+domain:posthog.com
+domain:segment.com
+domain:segment.io
+domain:amplitude.com
+domain:mixpanel.com
+domain:launchdarkly.com
+domain:datadoghq.com
+domain:onesignal.com
+domain:appsflyer.com
+domain:revenuecat.com
+domain:branch.io
+domain:cloudflareinsights.com
+
+
+# ============ 16. 可选（默认注释掉，需要时去掉行首 #） ============
+# 说明：这些不是纯 AI 站，代理后可能让原本能直连的服务变慢，按需启用。
+# domain:facebook.com          # Meta AI 在 FB / IG / WhatsApp 内的入口
+# domain:instagram.com
+# domain:whatsapp.com
+# domain:whatsapp.net
+# domain:discord.com           # Midjourney 依赖 Discord
+# domain:discordapp.com
+# domain:discord.gg
+# domain:canva.com             # Magic Studio
+# domain:adobe.com             # Firefly（国内有 CDN，容易误伤，不建议整域）
+# domain:vercel.com            # v0.dev 后端（大量第三方站托管于此）
+# domain:jetbrains.com         # AI Assistant
+# domain:firebaseio.com        # App 推送 / 认证
+# domain:klingai.com           # 可灵国际版（国区厂商，国际站）
+# domain:salesforce.com        # Einstein
+
+
+# ============ 17. geosite 兜底（可选，默认不启用） ============
+# 若你的 geosite.dat 含 AI 分类，可加一行做兜底，覆盖长尾 AI 域名。
+# 分类名取决于规则数据源，二选一、先确认存在再启用（分类不存在会报错/不生效）：
+# geosite:openai          # Loyalsoldier / 定制 clash-geosite 常见，实为「人工智能」合集
+# geosite:ai              # 部分定制 geosite.dat 用这个分类名
+# geosite:category-ai-!cn # blackmatrix7 系规则集的命名
