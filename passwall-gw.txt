@@ -1,0 +1,96 @@
+# ==========================================
+# 1. 核心分流与通用黑名单规则集 (适用于 PassWall 2 / Sing-box)
+# ==========================================
+geosite:gfw
+# ==========================================
+# 4. 社交、通讯与媒体平台 (TG, X, Meta, Discord, Reddit 等)
+# ==========================================
+telegram.org
+t.me
+telegram.me
+telegram.dog
+twitter.com
+x.com
+twimg.com
+t.co
+facebook.com
+fbcdn.net
+fbsv.net
+instagram.com
+instagr.am
+cdninstagram.com
+messenger.com
+meta.com
+graph.meta.com
+discord.com
+discord.gg
+discordapp.com
+discordapp.net
+spotify.com
+scdn.co
+vimeo.com
+vimeocdn.com
+reddit.com
+redd.it
+redditmedia.com
+medium.com
+wikipedia.org
+wikimedia.org
+
+
+# ==========================================
+# 5. 开发者工具、开源社区与云服务 (GitHub, Docker, Oracle, Stripe 等)
+# ==========================================
+github.com
+github.global.ssl.fastly.net
+assets-cdn.github.com
+githubusercontent.com
+github.io
+docker.com
+registry.hub.docker.com
+auth.docker.io
+registry-1.docker.io
+production.cloudflare.docker.com
+oraclecloud.com
+oracle.com
+stripe.com
+stripe.network
+invoice.stripe.com
+intercom.io
+intercomcdn.com
+js.intercomcdn.com
+sentry.io
+identrust.com
+cdn.usefathom.com
+javascript.info
+licdn.com
+linkedin.com
+static-ecst.licdn.com
+api.ipify.org
+spys.one
+music.gdstudio.xyz
+torrentmac.net
+
+# ==========================================
+# 6. 全球常用 CDN、存储与网络设施
+# ==========================================
+akamaized.net
+akamaitechnologies.com
+cloudfront.net
+cloudflareinsights.com
+compute-pipe.com
+doubleclick.net
+edgecompute.app
+epsiloncdn.net
+cs1404.wpc.epsiloncdn.net
+f7tk.com
+dropbox.com
+dropboxstatic.com
+1drv.ms
+last.fm
+musicbrainz.org
+binance.com
+crypto.com
+appstorrent.ru
+domain:cloudflare.com
+IP段
