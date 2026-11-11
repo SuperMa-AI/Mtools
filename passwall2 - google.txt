@@ -1,0 +1,15 @@
+# ==========================================
+# 3. Google & YouTube 全家桶
+# ==========================================
+google.com
+googleapis.com
+gstatic.com
+google-analytics.com
+googletagmanager.com
+googleusercontent.com
+pki.goog
+1e100.net
+a-msedge.net
+youtube.com
+googlevideo.com
+ytimg.com
