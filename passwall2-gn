@@ -1,0 +1,39 @@
+# 基础大包
+geosite:cn
+
+# 核心防环：DoT/DoH 解析器（必须直连，防止 DNS 环路）
+domain:dns.alidns.com
+domain:doh.pub
+domain:dot.pub
+domain:doh.360.cn
+domain:dot.360.cn
+
+# Steam / Epic 国内及第三方加速节点显式兜底
+domain:steamcontent.com
+domain:dl.steam.clngaa.com
+domain:dl.steam.ksyna.com
+domain:st.dl.bscstorage.net
+domain:st.dl.eccdnx.com
+domain:st.dl.pinyuncloud.com
+domain:cdn.mileweb.cs.steampowered.com.8686c.com
+domain:cdn-ws.content.steamchina.com
+domain:cdn-qc.content.steamchina.com
+domain:cdn-ali.content.steamchina.com
+domain:epicgames-download1-1251447533.file.myqcloud.com
+
+# 斗鱼 CDN 与杂项服务
+domain:dyndns.com
+domain:douyucdn.cn
+domain:douyucdn2.cn
+domain:location.services.mozilla.com
+domain:nginxproxymanager.com
+domain:freenom.com
+domain:test-ipv6.com
+domain:95598.cn
+domain:cloudflare-cn.com
+domain:quark.cn
+domain:myquark.cn
+
+# 车企及垂直国内服务（geosite:cn 未必完全覆盖）
+domain:li.auto
+domain:lixiang.com
