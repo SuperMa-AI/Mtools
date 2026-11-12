@@ -38,12 +38,12 @@ domain:claude.com
 #       bard.google.com、makersuite.google.com 已被 A 类 domain:google.com /
 #       domain:googleapis.com 覆盖，这里只补独立顶级域。
 domain:ai.google.dev
-domain:ai.google
-domain:deepmind.google
+domain:ai.google.com
+domain:deepmind.google.com
 domain:deepmind.com
-domain:labs.google
-domain:notebooklm.google
-domain:gemini.google
+domain:labs.google.com
+domain:notebooklm.google.com
+domain:gemini.google.com
 
 
 # ============ 4. xAI / Grok ============
