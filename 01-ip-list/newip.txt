@@ -1,14 +1,13 @@
-# newip.txt — 6 源汇总（tiancheng / tiancheng2 × hk / jp / sg）
-# 合并时间: 2026-11-13 14:26:50
-# 来源:
-#   https://bestcf.pages.dev/tiancheng/hk.txt
-#   https://bestcf.pages.dev/tiancheng/jp.txt
-#   https://bestcf.pages.dev/tiancheng/sg.txt
-#   https://bestcf.pages.dev/tiancheng2/hk.txt
-#   https://bestcf.pages.dev/tiancheng2/jp.txt
-#   https://bestcf.pages.dev/tiancheng2/sg.txt
-# 去重规则: 按 ip:port 去重（6 个文件首行 162.159.198.1:443 为通用兜底，保留 1 次）
-# 去重后节点数: 61
+# newip.txt — 汇总（IPv4: 6 源；IPv6: 2 源仅保留联通）
+# 合并时间: 2026-11-13 14:39:15
+# IPv4 来源（全部）:
+#   https://bestcf.pages.dev/tiancheng/{hk,jp,sg}.txt
+#   https://bestcf.pages.dev/tiancheng2/{hk,jp,sg}.txt
+# IPv6 来源（仅联通）:
+#   https://bestcf.pages.dev/vvhan/ipv6.txt
+#   https://bestcf.pages.dev/cfyes/ipv6.txt
+# 去重规则: 按 ip:port 去重（162.159.198.1:443 通用兜底保留 1 次；IPv6 仅保留备注含「联通」的行）
+# 去重后节点数: 76
 162.159.198.1:443#天诚优选1 HK版 | 11-13 13:06 | BestCF.pages.dev
 194.104.147.253:443#天诚优选1 | 港岛茶记 | HK | 194.104.147.253:443
 216.236.51.1:1891#天诚优选1 | 港岛茶记 | HK | 216.236.51.1:1891
@@ -70,3 +69,18 @@
 178.128.125.110:443#天诚优选2 | 坡县狮城 | SG | 178.128.125.110:443
 43.134.104.39:8443#天诚优选2 | 坡县狮城 | SG | 43.134.104.39:8443
 216.195.195.205:443#天诚优选2 | 坡县狮城 | SG | 216.195.195.205:443
+[2606:4700:9c6b:8793:cff6:894b:7ef3:caa7]:443#vvHan优选 | 联通 | Default | 2606:4700:9c6b:8793:cff6:894b:7ef3:caa7
+[2606:4700:90de:a2a6:aa15:31f0:e715:33ca]:443#vvHan优选 | 联通 | Default | 2606:4700:90de:a2a6:aa15:31f0:e715:33ca
+[2606:4700:9b0d:7c5f:777b:e0a1:f113:f930]:443#vvHan优选 | 联通 | Default | 2606:4700:9b0d:7c5f:777b:e0a1:f113:f930
+[2606:4700:3001:df6a:7191:f593:3c73:1c38]:443#vvHan优选 | 联通 | Default | 2606:4700:3001:df6a:7191:f593:3c73:1c38
+[2606:4700:9c6b:a720:7895:597e:d864:871c]:443#vvHan优选 | 联通 | Default | 2606:4700:9c6b:a720:7895:597e:d864:871c
+[2606:4700:9ae2::2cc5:9ca7]:443#vvHan优选 | 联通 | AMS | 2606:4700:9ae2::2cc5:9ca7
+[2606:4700:99e1::b69f:8832]:443#vvHan优选 | 联通 | AMS | 2606:4700:99e1::b69f:8832
+[2606:4700:9ae4::2143:6f27]:443#vvHan优选 | 联通 | AMS | 2606:4700:9ae4::2143:6f27
+[2606:4700:91b7::b74f:bda9]:443#vvHan优选 | 联通 | AMS | 2606:4700:91b7::b74f:bda9
+[2606:4700:9aea::dde1:e7e8]:443#vvHan优选 | 联通 | AMS | 2606:4700:9aea::dde1:e7e8
+[2606:4700:9a64:eea:7fa0:6a04:c06e:5fad]:443#CFYes优选 | 联通 | [2606:4700:9a64:eea:7fa0:6a04:c06e:5fad]
+[2606:4700:83bc:f85e:e2c7:ff2d:f175:27e8]:443#CFYes优选 | 联通 | [2606:4700:83bc:f85e:e2c7:ff2d:f175:27e8]
+[2606:4700:91b0:8994:bead:b979:b57:5243]:443#CFYes优选 | 联通 | [2606:4700:91b0:8994:bead:b979:b57:5243]
+[2606:4700:9a64:5073:4034:c2d3:1ebe:4aac]:443#CFYes优选 | 联通 | [2606:4700:9a64:5073:4034:c2d3:1ebe:4aac]
+[2606:4700:9ae0:d90a:bdc8:38b4:b7d2:173a]:443#CFYes优选 | 联通 | [2606:4700:9ae0:d90a:bdc8:38b4:b7d2:173a]
