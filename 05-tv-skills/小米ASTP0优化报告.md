@@ -1,6 +1,8 @@
 # 小米 MiTV-ASTP0 桌面与优化报告
 
-操作日期：2026-11-11 · 设备：`192.168.26.10:5555`
+操作日期：2026-11-11 · 设备：`x.x.x.x:5555`
+
+> 注：公开版本已对内网 IP 与设备 MAC 做脱敏（分别以 `x.x.x.x` / `xx:...` 代替）。
 
 ## 设备
 
@@ -111,14 +113,14 @@ dumpsys accessibility 里只有「小爱同学」一个服务
 
 ```bash
 # 1) 还原全部禁用
-TV_HOST=192.168.26.10 tools/restore.sh /path/to/applied-debloat.txt
+TV_HOST=x.x.x.x tools/restore.sh /path/to/applied-debloat.txt
 
 # 2) 恢复原桌面为默认
-TV_HOST=192.168.26.10 tools/tv.py 'cmd package set-home-activity --user 0 com.mitv.tvhome/.MainActivityUserMode'
-TV_HOST=192.168.26.10 tools/tv.py 'input keyevent KEYCODE_HOME'
+TV_HOST=x.x.x.x tools/tv.py 'cmd package set-home-activity --user 0 com.mitv.tvhome/.MainActivityUserMode'
+TV_HOST=x.x.x.x tools/tv.py 'input keyevent KEYCODE_HOME'
 
 # 3) 卸掉新桌面（可选）
-TV_HOST=192.168.26.10 tools/tv.py 'pm uninstall com.gathin.tvhome'
+TV_HOST=x.x.x.x tools/tv.py 'pm uninstall com.gathin.tvhome'
 ```
 
 关掉无障碍开关：设置 → 无障碍 → 服务 → 「Home button」→ 关闭。
@@ -328,7 +330,7 @@ ZNDS 2025/2026 帖（2026 重新汉化版 14910 浏览）、吾爱破解 2023（
 1. 先复查重启是否让云控白名单生效（最干净，不用装任何东西）
 2. 没生效 → 优先用 **Aerial**（开源可审计、ASTP0 已验证、有复活机制、`install.sh` 一行安装、
    带 `KEEP_ADB=1`），而不是 LM Ultimate（闭源、有变砖案例、澎湃 OS3 实测失败）
-3. Aerial 一行命令：`curl -fsSL https://aerial.qust.me/install.sh | KEEP_ADB=1 TV=192.168.26.10 bash`
+3. Aerial 一行命令：`curl -fsSL https://aerial.qust.me/install.sh | KEEP_ADB=1 TV=x.x.x.x bash`
    脚本只做安装 + 授权 + 守护，**不卸载任何系统应用**；还原用 `bash -s restore --uninstall`
 
 用户暂未重启，本轮未对电视做任何改动。
@@ -336,7 +338,7 @@ ZNDS 2025/2026 帖（2026 重新汉化版 14910 浏览）、吾爱破解 2023（
 ## Aerial 安装准备（2026-11-11 19:15，未执行）
 
 > ⚠️ 本节是 19:15 的**准备阶段推断**，其中三条已被 19:22 的实测修正：
-> ① 本机官方 `adb` 其实**可以直连** 192.168.26.10（`device`），不需要 TVHelper 通道；
+> ① 本机官方 `adb` 其实**可以直连** x.x.x.x（`device`），不需要 TVHelper 通道；
 > ② Aerial 拿到 `WRITE_SECURE_SETTINGS` 后用**全限定组件名**自己打开了守护，未被小米剔除；
 > ③ 用户实际装的是 **standard 版**（`versionName=1.94`），工作正常，无需 guard 版。
 > 以文末「Aerial 配置为默认桌面」一节的实测结果为准。
@@ -382,14 +384,14 @@ ZNDS 2025/2026 帖（2026 重新汉化版 14910 浏览）、吾爱破解 2023（
 ### 当前阻塞（19:15 实测）
 
 ```
-ping 192.168.26.1    通          ← 26 网段网关正常
-ping 192.168.9.254   通          ← 软路由正常
-ping 192.168.26.10   0/3         ← 只有电视不通
-arp -n .10           no entry
+ping x.x.x.x    通          ← x 网段网关正常
+ping x.x.x.x   通          ← 软路由正常
+ping x.x.x.x   0/3         ← 只有电视不通
+arp -n x.x           no entry
 nc 5555              Network is unreachable
 ```
 
-路由本身没问题（`route get` 走 .254），是**电视自己离线**——重启后待机断网或 ADB 被关。
+路由本身没问题（`route get` 走 x.x），是**电视自己离线**——重启后待机断网或 ADB 被关。
 需要用户唤醒电视、确认联网，并在「设置 → 账号与安全 → ADB 调试」重新打开后，才能执行安装。
 
 ### 已备好的脚本
@@ -428,8 +430,8 @@ settings system: boot_ad=0, boot_ad_sound_enable=0, boot_ad_switch_show=0, boot_
 1. 电视 **设置 → 智能推荐 → 广告服务 → 开机广告**（需 MIUI TV 3.5.128+ 且登录小米账号）；
    本机开关被隐藏，若找不到就走第 2 条。
 2. **联系小米在线客服，提供 MAC 让后台永久关闭开机广告**。本机 MAC：
-   - 有线 `78:53:33:20:60:16`
-   - Wi-Fi `a8:96:09:9f:23:d7`
+   - 有线 `xx:xx:xx:xx:xx:xx`
+   - Wi-Fi `xx:xx:xx:xx:xx:xx`
 
 未擅自改动 `boot_auto_play=1`（含义不确定，可能是「开机自动进入上次信号源」）。
 
