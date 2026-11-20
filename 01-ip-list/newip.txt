@@ -1,30 +1,30 @@
 # newip.txt — 汇总池（仅两个来源）
-# 更新时间: 2026-11-20 13:31
+# 更新时间: 2026-11-20 21:50
 # 来源1: https://raw.githubusercontent.com/yuanxiawan/cfipv4db/main/cfip.txt（IP#地区，无端口，统一补 :443）
 # 来源2: https://raw.githubusercontent.com/nyoungo/bestIp/main/best_ips.txt（IP:端口#地区）
 # 去重规则: 按 ip:port 去重，先到先得；备注保留地区码并标注来源
 # 节点构成: 来源1 15 / 来源2 9 / 去重后合计 24
-162.159.128.219:443#LHR-cfipv4db
-104.20.50.75:443#FRA-cfipv4db
-104.20.58.176:443#FRA1-cfipv4db
-172.66.142.12:443#HKG-cfipv4db
-104.25.250.240:443#HKG1-cfipv4db
-172.67.95.206:443#LAX-cfipv4db
-104.24.20.209:443#LAX1-cfipv4db
-104.20.28.194:443#HKG2-cfipv4db
-104.18.201.166:443#LAX2-cfipv4db
-104.25.100.218:443#LAX3-cfipv4db
-172.64.151.245:443#SIN-cfipv4db
-172.64.154.69:443#SIN1-cfipv4db
-172.64.149.206:443#SIN2-cfipv4db
-104.18.43.58:443#SIN3-cfipv4db
-104.18.45.84:443#SIN4-cfipv4db
-39.106.2.1:443#JP-bestIp
+104.25.253.7:443#HKG-cfipv4db
+172.66.200.57:443#HKG1-cfipv4db
+104.18.91.62:443#LHR-cfipv4db
+104.25.245.76:443#HKG2-cfipv4db
+104.25.244.143:443#HKG3-cfipv4db
+104.27.87.103:443#LAX-cfipv4db
+104.25.126.237:443#LAX1-cfipv4db
+104.27.14.81:443#LAX2-cfipv4db
+104.25.241.105:443#LAX3-cfipv4db
+104.17.24.68:443#LAX4-cfipv4db
+172.64.151.146:443#SIN-cfipv4db
+104.18.35.252:443#SIN1-cfipv4db
+104.18.36.15:443#SIN2-cfipv4db
+172.64.152.186:443#SIN3-cfipv4db
+172.64.148.52:443#SIN4-cfipv4db
 39.106.84.178:443#JP-bestIp
-47.74.2.237:443#JP-bestIp
-103.68.223.115:443#JP-bestIp
+39.106.2.1:443#JP-bestIp
+103.222.43.29:8443#JP-bestIp
+101.132.111.63:443#SG-bestIp
+47.245.13.123:443#JP-bestIp
 8.216.30.250:443#JP-bestIp
+8.216.6.37:443#JP-bestIp
 47.245.26.191:443#JP-bestIp
-69.8.131.228:443#JP-bestIp
-69.8.131.164:443#JP-bestIp
-69.8.131.153:443#JP-bestIp
+8.216.61.208:443#JP-bestIp
