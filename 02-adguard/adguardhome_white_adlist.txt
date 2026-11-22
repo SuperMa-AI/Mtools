@@ -121,8 +121,14 @@
 ! 微信/QQ 链接安全检测：拦截会导致微信内打开链接慢/白屏
 @@||safebrowsing.urlsec.qq.com^$important
 
-! 小米设备服务 / 推送（如不用小米手机可删）
+! 小米设备 / 云服务 / 推送（手机+平板跨设备场景）
 @@||api.device.xiaomi.net^$important
+@@||api.g.micloud.xiaomi.net^$important
+@@||findapi.micloud.xiaomi.net^$important
+@@||us.api.micloud.xiaomi.net^$important
+@@||resolver.msg.global.xiaomi.net^$important
+@@||sec-cdn.static.xiaomi.net^$important
+! 注：sentry.d.xiaomi.net / alisgp-sentry.d.xiaomi.net 是错误上报，保持拦截
 
 ! WPS / 金山在线文档（如不用 WPS 可删）
 @@||dw-online.ksosoft.com^$important
