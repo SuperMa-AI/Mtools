@@ -92,5 +92,5 @@ musicbrainz.org
 binance.com
 crypto.com
 appstorrent.ru
-domain:cloudflare.com
+cloudflare.com
 IP段
