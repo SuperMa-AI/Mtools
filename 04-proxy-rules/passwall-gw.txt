@@ -93,4 +93,3 @@ binance.com
 crypto.com
 appstorrent.ru
 cloudflare.com
-IP段
