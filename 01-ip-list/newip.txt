@@ -1,26 +1,24 @@
-# newip.txt — 汇总池（仅四个来源）
-# 更新时间: 2026-11-27 19:19
+# newip.txt — 汇总池（仅两个来源）
+# 更新时间: 2026-11-27 19:35
 # 来源1: https://raw.githubusercontent.com/yuanxiawan/cfipv4db/main/cfip.txt（IP#地区，无端口，统一补 :443）
 # 来源2: https://raw.githubusercontent.com/nyoungo/bestIp/main/best_ips.txt（IP:端口#地区）
-# 来源3: https://bestcf.pages.dev/tiancheng/hk.txt（IP:端口#中文备注，精简为 HK-tiancheng）
-# 来源4: https://bestcf.pages.dev/tiancheng/jp.txt（IP:端口#中文备注，精简为 JP-tiancheng）
 # 去重规则: 按 ip:port 去重，先到先得；备注保留地区码并标注来源
-# 节点构成: 来源1 15 / 来源2 9 / 来源3 12 / 来源4 10 / 去重后合计 46
-162.159.156.6:443#LHR-cfipv4db
-104.25.245.181:443#HKG-cfipv4db
-172.67.155.2:443#SEA-cfipv4db
-172.66.46.52:443#SEA1-cfipv4db
-162.159.149.95:443#LHR1-cfipv4db
-104.20.20.56:443#HKG1-cfipv4db
-162.159.160.100:443#FRA-cfipv4db
-104.18.25.235:443#HKG2-cfipv4db
-104.17.142.231:443#SJC-cfipv4db
-104.17.159.74:443#SJC1-cfipv4db
-104.18.45.64:443#SIN-cfipv4db
-104.18.34.253:443#SIN1-cfipv4db
-172.64.151.174:443#SIN2-cfipv4db
-104.18.40.125:443#SIN3-cfipv4db
-172.64.159.37:443#SIN4-cfipv4db
+# 节点构成: 来源1 15 / 来源2 9 / 去重后合计 24
+172.67.165.143:443#SEA-cfipv4db
+104.17.253.10:443#SEA1-cfipv4db
+104.25.245.232:443#HKG-cfipv4db
+172.67.151.143:443#SEA2-cfipv4db
+104.18.92.141:443#LHR-cfipv4db
+162.159.149.50:443#HKG1-cfipv4db
+162.159.160.156:443#FRA-cfipv4db
+104.18.11.180:443#LAX-cfipv4db
+104.24.158.7:443#LAX1-cfipv4db
+162.159.237.128:443#SJC-cfipv4db
+104.18.34.235:443#SIN-cfipv4db
+172.64.151.153:443#SIN1-cfipv4db
+172.64.149.97:443#SIN2-cfipv4db
+172.64.158.75:443#SIN3-cfipv4db
+104.18.47.90:443#SIN4-cfipv4db
 68.64.182.103:443#HK-bestIp
 68.64.182.73:443#HK-bestIp
 219.76.13.177:443#HK-bestIp
@@ -30,25 +28,3 @@
 103.27.186.39:443#JP-bestIp
 13.158.101.189:443#JP-bestIp
 20.239.144.216:8443#HK-bestIp
-162.159.198.1:443#HK-tiancheng
-50.114.180.119:443#HK-tiancheng
-216.236.51.144:1891#HK-tiancheng
-216.195.213.239:1891#HK-tiancheng
-216.236.51.55:1891#HK-tiancheng
-202.148.220.228:443#HK-tiancheng
-216.195.213.84:1891#HK-tiancheng
-198.20.133.172:443#HK-tiancheng
-206.237.19.16:443#HK-tiancheng
-202.148.220.180:443#HK-tiancheng
-202.148.221.168:443#HK-tiancheng
-162.159.197.1:443#HK-tiancheng
-54.64.116.80:443#JP-tiancheng
-172.64.229.45:443#JP-tiancheng
-172.64.229.149:443#JP-tiancheng
-172.64.229.160:443#JP-tiancheng
-172.64.229.238:443#JP-tiancheng
-35.75.115.66:443#JP-tiancheng
-172.64.229.170:443#JP-tiancheng
-52.192.3.41:443#JP-tiancheng
-64.83.46.148:443#JP-tiancheng
-172.64.229.17:443#JP-tiancheng
